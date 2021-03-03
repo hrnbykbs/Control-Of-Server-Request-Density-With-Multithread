@@ -2,10 +2,10 @@
 It is to reduce the density of requests to the main server together with sub-servers by using multithread.
 
 # Project Main Structure
-• When the application is run, there are 1 main server and 2 sub servers.
-• Requests arrive at 500 ms intervals to the main server.
-• Sub-servers receive requests from the main server at 500 ms intervals and return themselves.
-• The sub-server creator controls the sub-servers and creates a new sub-server if it has a capacity of 70% or more, and transfers half of the requests on the server whose capacity exceeds 70% to the new server. If the capacity of the newly created sub server drops to 0%, the sub server disappears.
+• When the application is run, there are 1 main server and 2 sub servers.<br>
+• Requests arrive at 500 ms intervals to the main server.<br>
+• Sub-servers receive requests from the main server at 500 ms intervals and return themselves.<br>
+• The sub-server creator controls the sub-servers and creates a new sub-server if it has a capacity of 70% or more, and transfers half of the requests on the server whose capacity exceeds 70% to the new server. If the capacity of the newly created sub server drops to 0%, the sub server disappears.<br>
 • In Server Tracking, the capacity information of the servers should be printed on the screen.
 
 # Features of the Project Components
